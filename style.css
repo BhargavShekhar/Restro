@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* border: 2px solid red; */
+    height: 12vh;
+    padding: 0 4vw;
+    background-color: black;
+    color: white;
+    font-size: 3.4vh;
+    position: sticky;
+    top: 0;
+}
+
+ul{
+    display: flex;
+    list-style: none;
+    gap: 4vw;
+    font-size: 78%;
+}
+
+.search{
+    display: flex;
+    align-items: center;
+    gap: 1.5vw;
+    font-size: 70%;
+}
+
+.search button{
+    font-size: 80%;
+    width: 6vw;
+    height: 5vh;
+    padding: 5px;
+    border: none;
+    border-radius: 8px;
+    background-color: burlywood;
+    color: white;
+}
+
+main{
+    /* border: 2px solid red; */
+    height: 88vh;
+    background-image: url("/Restro/bg.jpeg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10vw;
+}
+
+main .text{
+    color:rgb(255, 255, 255);
+    font-weight: bolder;    
+    font-size: 7vh;
+    text-shadow: 2px 2px rgb(246, 141, 4);
+    margin-bottom: 27px;
+}
+
+main .text-0{
+    font-size: 4vh;
+    text-shadow: 1px 1px rgba(0, 234, 156, 0.549);
+    margin-bottom: 0;
+}
+
+main button{
+    font-size: 80%;
+    background-color: burlywood;
+    color: white;
+    width: 8vw;
+    height: 7vh;
+    border-radius: 8px;
+    border: none;
+    font-size: 2.8vh;
+}
+
+button:hover{
+    background-color: rgba(222, 184, 135, 0.619);
+    cursor: pointer;
+}
+
+li:hover{
+    cursor: pointer;
+    color: rgba(245, 245, 245, 0.853);
+}
+
+.search:hover{
+    cursor: pointer;
+}
+
+footer{
+    height: 50vh;
+}
+
+@media screen and (max-width:900px) {
+    /* nav{
+        background-color: red;
+    } */
+
+    .logo{
+        margin: 0 4%;
+    }
+
+    ul{
+        display: none;
+    }
+
+    .search{
+        gap: 3.8vw;
+    }
+
+    .search button{
+        width: 24vw;
+        height: 5vh;
+    }
+
+    main{
+        /* border: 2px solid red; */
+        background-size: 118vh;
+    }
+
+    main button{
+        width: 34vw;
+    }
+}

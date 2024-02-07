@@ -96,7 +96,35 @@ li:hover{
 }
 
 footer{
-    height: 50vh;
+    /* height: 28vh; */
+    background-color: #000;
+    color: white;
+    padding: 17px;
+}
+
+.questions{
+    text-align: center;
+    margin-bottom: 4vh;
+    font-size: 4vh;
+}
+
+.footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    font-size: 2vh;
+}
+
+footer .footer-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding-left: 12px;
+}
+
+footer a{
+    color: white;
 }
 
 @media screen and (max-width:900px) {
@@ -128,5 +156,13 @@ footer{
 
     main button{
         width: 34vw;
+    }
+
+    .questions{
+        font-size: 2vh;
+    }
+
+    .footer{
+        font-size: 1vh;
     }
 }
